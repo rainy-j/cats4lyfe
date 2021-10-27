@@ -1,7 +1,7 @@
 
 
 
-const Cat = ({item,index}) => { 
+const Cat = ({item}) => { 
     return(
     <div>
         <div cat={item}/>          

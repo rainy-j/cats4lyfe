@@ -21,8 +21,7 @@ const getCats = async () => {
         cat["name"] = faker.name.firstName()        
         cat["age"] = faker.datatype.number(20)
         cat["price"] = faker.commerce.price(50,500)
-        // console.log(data)
-        console.log(cat)
+        // console.log(cat)
       }
       setCats(data)
   }
