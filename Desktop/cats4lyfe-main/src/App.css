@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  width: 100vw;
+}
+
+.nav-container .nav-bar .nav-list {
+  display: flex;
+  
+  list-style: none;
+  margin: 0 1em;
+}
+
+.logo-container {
+  flex: 2;
+}
+
+.basket-container {
+  flex: 1;
+}
+
+.nav-bar {
+  flex: 6;
+}
+
+.nav-bar .nav-list .nav-item {
+  padding: 0 2em;
+}
+
+ul li {
+  text-decoration: none;
+}
+#logo-span {
+  color: #FE1708;
+}
