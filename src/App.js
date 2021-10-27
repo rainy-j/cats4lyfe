@@ -37,7 +37,6 @@ const getCats = async () => {
             })
     }
 </div>
-
     </div>
     
   );
