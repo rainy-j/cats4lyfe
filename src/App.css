@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Questrial&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -37,4 +38,54 @@ ul li {
 }
 #logo-span {
   color: #FE1708;
+}
+.row{ 
+  float: left;
+  width: 25%;
+  padding: 20px;
+
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.images{
+  float: none;
+  margin-top: 12px;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  max-width: 350px;
+  
+} 
+.row:hover{
+  border-radius: 20px;
+  background-color: rgb(253, 212, 212);
+  box-shadow: 3px 3px rgb(180, 175, 175);
+  
+}
+.text{
+  font-size: large;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  margin: 5px;
+}
+button{
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #FE1708;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+  margin-left: 60%;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  
 }

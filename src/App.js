@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import CartImage from "./Images/icon-cart.svg";
 
 function App() {
+
   const [cats, setCats] = useState([]);
 
   useEffect(() => {
@@ -15,17 +16,19 @@ function App() {
 
 
 const getCats = async () => {
-    
-      let response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10")
-      let data = await response.json(); 
+ 
+      let response = await fetch("https://api.thecatapi.com/v1/images/search?limit=12")
+      let data = await response.json();
       for (let i = 0; i < data.length ; i++) {
         const cat = data[i];
         cat["name"] = faker.name.firstName()        
         cat["age"] = faker.datatype.number(20)
         cat["price"] = faker.commerce.price(50,500)
+        
         // console.log(cat)
       }
       setCats(data)
+     
   }
 
 
@@ -56,7 +59,9 @@ const getCats = async () => {
         <Switch>
           <Route path="/cats">
           {cats.map((item, index) => {
-          return <Cat item={item} index={index} key={index} />;
+  
+           
+          return <Cat item={item} index={index} key={index}  />;
         })}
           </Route>
           <Route path="/">

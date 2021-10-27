@@ -2,14 +2,16 @@
 
 
 const Cat = ({item}) => { 
+    
     return(
-    <div>
-        <div cat={item}/>          
-            <img src={item.url} alt="cat" width="200px" height="200px"></img>
+    <div className="row">
+        <div cat={item} className="line"/>          
+            <img src={item.url} alt="cat" width="200px" height="200px" className="images"></img>
             <div>  
-                <div>Name: {item.name} </div>
-                <div>Age:{item.age}</div>
-                <div>Price:£{item.price}</div>
+                <div className="text">Name: {item.name} </div>
+                <div className="text">Age: {item.age}</div>
+                <div className="text">Price: £{item.price}</div>
+                <button>Add</button>
             </div>          
     </div> 
     ) 
