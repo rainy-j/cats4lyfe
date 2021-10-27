@@ -14,7 +14,7 @@ function App() {
 
 const getCats = async () => {
     
-      let response = await fetch("https://api.thecatapi.com/v1/images/search?limit=4")
+      let response = await fetch("https://api.thecatapi.com/v1/images/search?limit=10")
       let data = await response.json(); 
       for (let i = 0; i < data.length ; i++) {
         const cat = data[i];
