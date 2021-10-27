@@ -1,16 +1,18 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import faker from "faker";
-import './App.css';
-import Cat from "./components/Cat.js";
+import "./App.css";
+import Cat from "./components/Cat";
+import Home from "./components/Home";
+import CartImage from "./Images/icon-cart.svg";
 
 function App() {
-
-  const [cats, setCats] = useState ([]); 
-
+  const [cats, setCats] = useState([]);
 
   useEffect(() => {
     getCats();
   }, []);
+
 
 const getCats = async () => {
     
@@ -26,18 +28,45 @@ const getCats = async () => {
       setCats(data)
   }
 
+
   return (
     <div className="App">
-<div>
-{cats.map((item, index) => {
-            return  (
-                <Cat item={item} index={index} key={index} />                                 
-                )
-            })
-    }
-</div>
+      <Router>
+        <div className="nav-container">
+          <div className="logo-container">
+            <h2>
+              CatsFor<span id="logo-span">Life</span>
+            </h2>
+          </div>
+
+          <div className="nav-bar">
+            <ul className="nav-list">
+              <li className="nav-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/cats">Cats</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="basket-container">
+            <img src={CartImage} alt="cart-icon" />
+          </div>
+        </div>
+        <Switch>
+          <Route path="/cats">
+          {cats.map((item, index) => {
+          return <Cat item={item} index={index} key={index} />;
+        })}
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+      <div>
+      </div>
     </div>
-    
   );
 }
 
