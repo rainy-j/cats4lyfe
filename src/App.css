@@ -108,6 +108,7 @@ button{
   /* margin-left: 60%; */
   font-family: 'Asap', sans-serif;
   font-family: 'Questrial', sans-serif;
+  border: none;
   
 }
 button:hover{
