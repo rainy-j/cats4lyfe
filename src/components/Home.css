@@ -31,9 +31,21 @@
 }
 
 #buttonParent {
-  box-shadow: black;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 p {
   flex-wrap: wrap;
+}
+
+#catParent {
+  width: 100px;
+}
+
+#catImage {
+  position: absolute;
+  width: 417px;
+  height: 405px;
+  left: 882px;
+  top: 314px;
 }

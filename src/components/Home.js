@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import "./Home.css";
+// import catImage from ; 
+
 
 const Home = () => {
 
@@ -9,8 +11,8 @@ const Home = () => {
 
     return <div className="homeContent">
         <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
-        <div>
-            <img src="./catinhat.png" />
+        <div id="catParent">
+            <img id="catImage" src="src/Images/catinhat.png" alt="cat-image" />
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         
