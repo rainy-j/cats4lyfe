@@ -1,18 +1,14 @@
 import { Link } from "react-router-dom"
 import "./Home.css";
-// import catImage from ; 
+
 
 
 const Home = () => {
 
-    // const handleOnClick = () => {
-    //    return <Link to="./Cat.js" <Link/>
-    // }
-
     return <div className="homeContent">
         <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
         <div id="catParent">
-            <img id="catImage" src="src/Images/catinhat.png" alt="cat" />
+            <img id="catImage" alt=""/>
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         

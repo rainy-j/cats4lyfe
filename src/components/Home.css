@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 #largestText,
 #subText {
   text-align: start;
   font-size: 72px;
-  margin-top: 30%;
+  margin-top: 20%;
   margin-left: 10%;
 }
 
@@ -19,6 +20,17 @@
 
 #samplePara {
   margin-left: 10%;
+}
+
+body {
+  background-position: top;
+  background-size: cover;
+  background-image: url(../Images/catinhat.png);
+  /* position: absolute; */
+  width: 417px;
+  /* height: 405px; */
+  /* left: 782px;
+  top: 214px; */
 }
 
 #catsButton {
@@ -40,12 +52,16 @@ p {
 
 #catParent {
   width: 100px;
+  border: none;
 }
 
 #catImage {
+  background-blend-mode: lighten;
+  /* background-size: cover; */
+  /* background-image: url(../Images/catinhat.png);
   position: absolute;
   width: 417px;
   height: 405px;
   left: 882px;
-  top: 314px;
+  top: 214px; */
 }
