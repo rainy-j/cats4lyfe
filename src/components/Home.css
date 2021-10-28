@@ -46,13 +46,25 @@
 }
 
 p {
-  flex-wrap: wrap;
+  position: absolute;
+  width: 697px;
+  height: 80px;
+  left: 0px;
+  top: 559px;
+
+  font-family: DM Serif Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #000000;
 }
 
 #catImage {
   position: absolute;
   width: 517px;
   height: 405px;
-  left: 882px;
+  left: 600px;
   top: 214px;
 }
