@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#largestText,
+#subText {
+  text-align: start;
+  font-size: 72px;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+#subText {
+  font-size: 32px;
+  font-weight: 50;
+  margin-top: 0;
+}
+
+#samplePara {
+  margin-left: 10%;
+}
+
+#catsButton {
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 10px;
+  font-weight: bolder;
+  box-shadow: black;
+  border: none;
+}
+
+#buttonParent {
+  box-shadow: black;
+}
+
+p {
+  flex-wrap: wrap;
+}

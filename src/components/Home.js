@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "./Home.css";
 
 const Home = () => {
 
@@ -7,12 +8,20 @@ const Home = () => {
     // }
 
     return <div className="homeContent">
-        <h1>CatsForLife</h1>
-        <h2>*not just for Christmas</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        <Link to="./Cat.js"> 
-            <button type="button">View Cats</button>
-        </Link>
+        <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
+        <div>
+            <img src="../Images/catinhat.png" />
+        </div>
+        <h2 id="subText">*not just for Christmas</h2>
+        
+        <div>
+            <p id="samplePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <div id="buttonParent">
+            <Link to="./Cat.js"> 
+             <button id="catsButton" type="button">View Cats</button>
+            </Link>
+        </div>
     </div>
 }
 
