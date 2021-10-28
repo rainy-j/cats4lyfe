@@ -12,7 +12,7 @@ const Home = () => {
     return <div className="homeContent">
         <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
         <div id="catParent">
-            <img id="catImage" src="src/Images/catinhat.png" alt="cat-image" />
+            <img id="catImage" src="src/Images/catinhat.png" alt="cat" />
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         
