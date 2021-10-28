@@ -34,6 +34,7 @@ const getCats = async () => {
 
   return (
     <div className="App">
+      
       <Router>
         <div className="nav-container">
           <div className="logo-container">
