@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=DM+Serif+Display&family=Questrial&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,8 +10,24 @@
 .nav-container {
   display: flex;
   width: 100vw;
+  padding: 1em 3em;
+  align-items: center;
+  background-color: #F4F4F4;
 }
 
+#basket-icon:hover {
+cursor: pointer;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
 .nav-container .nav-bar .nav-list {
   display: flex;
   list-style: none;
@@ -43,9 +60,6 @@ ul li {
   float: left;
   width: 25%;
   padding: 20px;
-  
-
-
 }
 
 .row::after {
@@ -98,6 +112,7 @@ button{
 }
 button:hover{
   background-color: #df0f00;
+  cursor: pointer;
 
 }
 .card{

@@ -38,7 +38,7 @@ const getCats = async () => {
       <Router>
         <div className="nav-container">
           <div className="logo-container">
-            <h2>
+            <h2 className="logo">
               CatsFor<span id="logo-span">Life</span>
             </h2>
           </div>
@@ -46,15 +46,15 @@ const getCats = async () => {
           <div className="nav-bar">
             <ul className="nav-list">
               <li className="nav-item">
-                <Link to="/">Home</Link>
+                <Link class="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/cats">Cats</Link>
+                <Link class="nav-link" to="/cats">Cats</Link>
               </li>
             </ul>
           </div>
           <div className="basket-container">
-            <img src={CartImage} alt="cart-icon" />
+            <img id="basket-icon"src={CartImage} alt="cart-icon" />
           </div>
         </div>
         <Switch>
