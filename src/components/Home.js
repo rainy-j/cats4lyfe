@@ -10,7 +10,7 @@ const Home = () => {
     return <div className="homeContent">
         <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
         <div>
-            <img src="../Images/catinhat.png" />
+            <img src="./catinhat.png" />
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         
@@ -18,7 +18,7 @@ const Home = () => {
             <p id="samplePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         </div>
         <div id="buttonParent">
-            <Link to="./Cat.js"> 
+            <Link to="./cats"> 
              <button id="catsButton" type="button">View Cats</button>
             </Link>
         </div>
