@@ -8,7 +8,7 @@ const Home = () => {
     return <div className="homeContent">
         <h1 id="largestText">CatsFor<span id="logo-span">Life</span></h1>
         <div id="catParent">
-            <img id="catImage" alt=""/>
+            <img id="catImage" src="https://farm8.static.flickr.com/7476/15834865910_a6670839d4.jpg" alt=""/>
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         

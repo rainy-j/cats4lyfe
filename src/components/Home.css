@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 #largestText,
@@ -10,6 +9,11 @@
   font-size: 72px;
   margin-top: 20%;
   margin-left: 10%;
+}
+
+#largestText {
+  font-weight: 400;
+  font-size: 100px;
 }
 
 #subText {
@@ -22,16 +26,16 @@
   margin-left: 10%;
 }
 
-body {
+/* body {
   background-position: top;
   background-size: cover;
   background-image: url(../Images/catinhat.png);
   /* position: absolute; */
-  width: 417px;
-  /* height: 405px; */
-  /* left: 782px;
+/* width: 417px; */
+/* height: 405px; */
+/* left: 782px;
   top: 214px; */
-}
+/* } */
 
 #catsButton {
   margin-top: 5%;
@@ -47,21 +51,25 @@ body {
 }
 
 p {
-  flex-wrap: wrap;
-}
+  position: absolute;
+  width: 697px;
+  height: 80px;
+  left: 0px;
+  top: 559px;
 
-#catParent {
-  width: 100px;
-  border: none;
+  font-family: DM Serif Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #000000;
 }
 
 #catImage {
-  background-blend-mode: lighten;
-  /* background-size: cover; */
-  /* background-image: url(../Images/catinhat.png);
   position: absolute;
-  width: 417px;
+  width: 517px;
   height: 405px;
-  left: 882px;
-  top: 214px; */
+  left: 600px;
+  top: 214px;
 }
