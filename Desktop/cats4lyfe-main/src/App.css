@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Questrial&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -10,14 +11,13 @@
 }
 
 .nav-container .nav-bar .nav-list {
-  display: flex;
-  
+  display: flex;  
   list-style: none;
   margin: 0 1em;
 }
 
 .logo-container {
-  flex: 2;
+  flex: 1;
 }
 
 .basket-container {
@@ -28,13 +28,123 @@
   flex: 6;
 }
 
-.nav-bar .nav-list .nav-item {
-  padding: 0 2em;
-}
-
-ul li {
-  text-decoration: none;
-}
 #logo-span {
   color: #FE1708;
+  font-weight: 900;
+}
+.row{ 
+  float: left;
+  width: 25%;
+  padding: 20px;
+
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.images{
+  float: none;
+  margin-top: 12px;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  max-width: 350px;
+  
+} 
+.row:hover{
+  border-radius: 20px;
+  background-color: rgb(253, 212, 212);
+  box-shadow: 3px 3px rgb(180, 175, 175);
+  
+}
+.text{
+  font-size: large;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  margin: 5px;
+}
+button{
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #FE1708;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+  margin-left: 60%;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Questrial', sans-serif;
+  
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  width: 100vw;
+  padding: 2em 10em;
+  background-color: #F4F4F4;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.basket-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar {
+  flex: 6;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+ .nav-bar .nav-list .nav-item {
+  padding: 0 5em;
+} 
+
+#logo-span {
+  color: #FE1708;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+#basket-icon {
+  cursor: pointer;
+  height: 2em;
+  
+}
+
+#basket-icon:hover {
+  transform: scale(1.2);
+}
+
+.active-nav-link {
+  font-weight: bolder;
+  font-size: 1.3rem;
 }

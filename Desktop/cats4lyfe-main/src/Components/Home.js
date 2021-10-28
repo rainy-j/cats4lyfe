@@ -1,5 +1,5 @@
 const Home = () => {
-    return <div>Home page is rendering</div>
+    return <div></div>
 }
 
 export default Home
