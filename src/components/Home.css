@@ -11,6 +11,11 @@
   margin-left: 10%;
 }
 
+#largestText {
+  font-weight: 400;
+  font-size: 100px;
+}
+
 #subText {
   font-size: 32px;
   font-weight: 50;
