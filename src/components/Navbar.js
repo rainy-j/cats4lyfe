@@ -9,9 +9,9 @@ const Navbar = ({ cats, basketTotal, setBasketTotal, finalTotal, setFinalTotal }
       <div className="nav-container">
         <div className="logo-container">
           <Link id="logo-link" to="./home">
-          <h2 className="logo">
-            CatsFor<span id="logo-span">Life</span>
-          </h2>
+            <h2 className="logo">
+              CatsFor<span id="logo-span">Life</span>
+            </h2>
           </Link>
         </div>
         <div className="nav-bar">
@@ -29,7 +29,7 @@ const Navbar = ({ cats, basketTotal, setBasketTotal, finalTotal, setFinalTotal }
           </ul>
         </div>
         <div className="basket-container">
-          <BasketApp basketTotal={basketTotal} finalTotal={finalTotal}/>
+          <BasketApp basketTotal={basketTotal} finalTotal={finalTotal} />
         </div>
       </div>
       <Switch>

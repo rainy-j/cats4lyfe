@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const Icon = styled(FontAwesomeIcon)`
   padding: 5px;
-  font-size: 24px;
+  font-size: 35px;
   color: #636363;
 `;
 
