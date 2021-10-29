@@ -7,7 +7,7 @@
 #subText {
   text-align: start;
   font-size: 72px;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 10%;
 }
 
@@ -26,23 +26,11 @@
   margin-left: 10%;
 }
 
-/* body {
-  background-position: top;
-  background-size: cover;
-  background-image: url(../Images/catinhat.png);
-  /* position: absolute; */
-/* width: 417px; */
-/* height: 405px; */
-/* left: 782px;
-  top: 214px; */
-/* } */
-
 #catsButton {
   margin-top: 5%;
   margin-left: 10%;
   border-radius: 10px;
   font-weight: bolder;
-  box-shadow: black;
   border: none;
 }
 
@@ -52,6 +40,7 @@
 
 p {
   position: absolute;
+  z-index: 100;
   width: 697px;
   height: 80px;
   left: 0px;
@@ -60,16 +49,21 @@ p {
   font-family: DM Serif Text;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 36px;
 
   color: #000000;
 }
 
+#catParent {
+  z-index: 0;
+}
+
 #catImage {
+  z-index: 1;
   position: absolute;
   width: 517px;
   height: 405px;
-  left: 600px;
+  left: 700px;
   top: 214px;
 }
