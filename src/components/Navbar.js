@@ -29,7 +29,7 @@ const Navbar = ({ cats, basketTotal, setBasketTotal, finalTotal, setFinalTotal }
           </ul>
         </div>
         <div className="basket-container">
-          <BasketApp basketTotal={basketTotal} finalTotal={finalTotal} />
+          <BasketApp setFinalTotal={setFinalTotal} basketTotal={basketTotal} finalTotal={finalTotal} />
         </div>
       </div>
       <Switch>

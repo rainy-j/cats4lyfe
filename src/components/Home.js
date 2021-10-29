@@ -12,9 +12,6 @@ const Home = () => {
         </div>
         <h2 id="subText">*not just for Christmas</h2>
         
-        <div>
-            <p id="samplePara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
         <div id="buttonParent">
             <Link to="./cats"> 
              <button id="catsButton" type="button">View Cats</button>
