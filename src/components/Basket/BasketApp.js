@@ -6,14 +6,14 @@ import { MainContainer, NavBar, OverLay } from "./AppStyles";
 
 import Cart from "./BasketIndex";
 
-export default function App() {
+export default function App({basketTotal, finalTotal}) {
   const [isToggle, setToggle] = useState(false);
 
   return (
     <>
       <GlobalStyles />
       <NavBar>
-        <Cart isToggle={isToggle} setToggle={setToggle} />
+        <Cart basketTotal={basketTotal} finalTotal={finalTotal} isToggle={isToggle} setToggle={setToggle} />
       </NavBar>
       <MainContainer>{isToggle && <OverLay />}</MainContainer>
     </>

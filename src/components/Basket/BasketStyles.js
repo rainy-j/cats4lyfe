@@ -58,6 +58,13 @@ export const EmptyCart = styled.div`
   font-size: 24px;
 `;
 
+export const FullCart = styled.div`
+  postion: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 35px;
+`;
+
 export const SideBarHeader = styled.div`
   font-weight: 300;
   font-size: 24px;
@@ -76,50 +83,3 @@ export const SideBarHeader = styled.div`
   }
 `;
 
-export const Card = styled.div`
-  display: flex;
-  position: relative;
-  margin: 35px 0 75px 0;
-`;
-
-export const CardImage = styled.img`
-  flex: 1;
-  height: auto;
-  width: auto;
-  max-width: 100px;
-  max-height: 100px;
-`;
-
-export const CardBody = styled.div`
-  flex: 2;
-  margin-left: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-`;
-
-export const CardTitle = styled.span`
-  font-size: 14px;
-  font-weight: 500;
-`;
-
-export const CardRemove = styled(FontAwesomeIcon)`
-    font-size: 16px:
-    color: #000000;
-    cursor: pointer;
-`;
-
-export const CardRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-`;
-
-export const ClearButton = styled.button`
-  width: 100%;
-  padding: 18px 24px;
-  background: #1a508b;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-`;

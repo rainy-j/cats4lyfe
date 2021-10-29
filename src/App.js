@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [cats, setCats] = useState([]);
+  const [basketTotal, setBasketTotal] = useState([]);
+  const [finalTotal, setFinalTotal] = useState()
 
   useEffect(() => {
     getCats();
@@ -26,7 +28,13 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar cats={cats} />
+      <Navbar
+        basketTotal={basketTotal}
+        setBasketTotal={setBasketTotal}
+        finalTotal={finalTotal}
+        setFinalTotal={setFinalTotal}
+        cats={cats}
+      />
     </div>
   );
 }

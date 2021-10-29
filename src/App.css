@@ -19,6 +19,11 @@
 cursor: pointer;
 }
 
+#logo-link{
+  text-decoration: none;
+  color: black;
+}
+
 .logo {
   font-size: 2em;
 }
