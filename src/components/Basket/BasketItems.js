@@ -25,7 +25,7 @@ const BasketItems = ({ basketTotal, finalTotal, setFinalTotal }) => {
             );
           })}
           <SideBarHeader>Total: £{finalTotal}</SideBarHeader>
-          <button onClick={() => checkoutHandler()} className="">Checkout</button>
+          <button onChange={checkoutHandler()} className="">Checkout</button>
     </div>
   );
 };
