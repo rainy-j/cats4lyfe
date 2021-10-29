@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cats4lyfe/static/css/main.72fa3e63.chunk.css",
+    "main.js": "/cats4lyfe/static/js/main.88b92ded.chunk.js",
+    "main.js.map": "/cats4lyfe/static/js/main.88b92ded.chunk.js.map",
+    "runtime-main.js": "/cats4lyfe/static/js/runtime-main.7b3f3060.js",
+    "runtime-main.js.map": "/cats4lyfe/static/js/runtime-main.7b3f3060.js.map",
+    "static/js/2.97885385.chunk.js": "/cats4lyfe/static/js/2.97885385.chunk.js",
+    "static/js/2.97885385.chunk.js.map": "/cats4lyfe/static/js/2.97885385.chunk.js.map",
+    "index.html": "/cats4lyfe/index.html",
+    "static/css/main.72fa3e63.chunk.css.map": "/cats4lyfe/static/css/main.72fa3e63.chunk.css.map",
+    "static/js/2.97885385.chunk.js.LICENSE.txt": "/cats4lyfe/static/js/2.97885385.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b3f3060.js",
+    "static/js/2.97885385.chunk.js",
+    "static/css/main.72fa3e63.chunk.css",
+    "static/js/main.88b92ded.chunk.js"
+  ]
+}
