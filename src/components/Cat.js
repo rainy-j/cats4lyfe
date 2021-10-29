@@ -1,20 +1,22 @@
 
 
 
-const Cat = ({item, basketTotal, setBasketTotal, finalTotal, setFinalTotal}) => { 
+const Cat = ({item, basketTotal, setBasketTotal, setFinalTotal}) => { 
 
-    const calculateTotal = () => {
-        let total = 0;
-        for (let i=0; i<=basketTotal.length-1; i++) {
-            total = basketTotal[i].price + total   
-        }
-        setFinalTotal(total)
-    }
+    // const calculateTotal = () => {
+    //     let total = 0;
+    //     for (let i=0; i<basketTotal.length; i++) {
+    //         console.log(basketTotal[i].price)
+    //         total += basketTotal[i].price   
+    //     }
+    //     return total
+    // }
  
+
     const addToBasketHandler = () => {
         const newArray = [...basketTotal, {item: item.name, price:Number(item.price), age:item.age, url:item.url}]
         setBasketTotal(newArray)
-        calculateTotal()
+        // calculateTotal()
         console.log(basketTotal)
     }
     

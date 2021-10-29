@@ -13,7 +13,7 @@ import {
 } from "./BasketStyles";
 import BasketItems from "./BasketItems";
 
-export default function Cart({ isToggle, setToggle, basketTotal, finalTotal }) {
+export default function Cart({ isToggle, setToggle, basketTotal, setFinalTotal, finalTotal }) {
   const $sidebarRef = useRef();
 
   // Detect click outside of the cart section to retract the sidebar
@@ -28,7 +28,7 @@ export default function Cart({ isToggle, setToggle, basketTotal, finalTotal }) {
 
       <CartSideBar ref={$sidebarRef} className={isToggle ? "expand" : "shrink"}>
         <SideBarHeader>Basket</SideBarHeader>
-        {(basketTotal.length === 0) ? <EmptyCart>Empty basket</EmptyCart> : <BasketItems basketTotal={basketTotal} finalTotal={finalTotal}/>}
+        {(basketTotal.length === 0) ? <EmptyCart>Empty basket</EmptyCart> : <BasketItems basketTotal={basketTotal} setFinalTotal={setFinalTotal} finalTotal={finalTotal}/>}
       </CartSideBar>
     </>
   );
