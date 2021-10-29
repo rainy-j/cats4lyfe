@@ -1,6 +1,6 @@
 import Cat from "./Cat";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import CartImage from "../Images/icon-cart.svg";
+
 import Home from "./Home";
 import BasketApp from "./Basket/BasketApp";
 
