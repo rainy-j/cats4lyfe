@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { faShoppingCart, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 import useOnClickOutside from "./Hooks/useOnClickOutside";
 
@@ -11,8 +11,9 @@ import {
   EmptyCart,
   SideBarHeader,
 } from "./BasketStyles";
+import BasketItems from "./BasketItems";
 
-export default function Cart({ isToggle, setToggle }) {
+export default function Cart({ isToggle, setToggle, basketTotal, finalTotal }) {
   const $sidebarRef = useRef();
 
   // Detect click outside of the cart section to retract the sidebar
@@ -22,12 +23,12 @@ export default function Cart({ isToggle, setToggle }) {
     <>
       <Wrapper onClick={() => setToggle(true)}>
         <Icon icon={faShoppingCart} />
-        <CartCount>0</CartCount>
+        <CartCount value={basketTotal.length}>{basketTotal.length}</CartCount>
       </Wrapper>
 
       <CartSideBar ref={$sidebarRef} className={isToggle ? "expand" : "shrink"}>
         <SideBarHeader>Basket</SideBarHeader>
-        <EmptyCart>Empty Basket</EmptyCart>
+        {(basketTotal.length === 0) ? <EmptyCart>Empty basket</EmptyCart> : <BasketItems basketTotal={basketTotal} finalTotal={finalTotal}/>}
       </CartSideBar>
     </>
   );
